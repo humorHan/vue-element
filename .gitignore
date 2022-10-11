@@ -1,0 +1,13 @@
+node_modules/
+.packages/
+lib/*
+.entry
+update.tar.gz
+*.tar.gz
+.log/
+static/
+dist/
+.idea/
+package-lock.json
+.DS_Store
+*-error.log

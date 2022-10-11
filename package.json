@@ -1,0 +1,65 @@
+{
+  "name": "cva-vue2-template",
+  "version": "0.0.1",
+  "description": "cva-vue2-template",
+  "main": "./src/index.js",
+  "scripts": {
+    "serve": "cva serve",
+    "build": "cva build",
+    "prepare": "husky install",
+    "lint:js": "eslint --fix",
+    "lint:css": "stylelint --fix"
+  },
+  "keywords": [
+    "vue-element-admin",
+    "cva-vue2-template",
+    "webpack5",
+    "vue2"
+  ],
+  "author": "humorhan",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.15.0",
+    "@babel/plugin-proposal-export-default-from": "^7.16.0",
+    "@babel/plugin-transform-runtime": "^7.16.0",
+    "@babel/preset-env": "^7.16.0",
+    "@commitlint/config-conventional": "^13.1.0",
+    "@humorhan/cva": "^0.0.3",
+    "babel-eslint": "^10.1.0",
+    "commitlint": "^13.1.0",
+    "eslint": "^7.32.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-friendly-formatter": "^4.0.1",
+    "eslint-plugin-import": "^2.24.0",
+    "eslint-plugin-vue": "^7.15.1",
+    "husky": "^7.0.1",
+    "lint-staged": "^11.1.2",
+    "stylelint": "^13.13.1",
+    "stylelint-config-standard": "^22.0.0",
+    "validate-branch-name": "^1.0.6",
+    "vue-eslint-parser": "^7.10.0"
+  },
+  "dependencies": {
+    "element-ui": "2.15.10",
+    "vue": "2.6.14",
+    "vue-router": "3.5.3",
+    "vue-template-compiler": "2.6.14"
+  },
+  "lint-staged": {
+    "**/*.js": [
+      "yarn lint:js"
+    ],
+    "**/*.vue": [
+      "yarn lint:js",
+      "yarn lint:css"
+    ],
+    "**/*.{css,scss}": [
+      "yarn lint:css"
+    ]
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ]
+}
